@@ -96,7 +96,7 @@ psychoJS.start({
     // libraries:
     {'surveyLibrary': true},
     // resources:
-    {'surveyId': '#25e8f1da-740f-438d-9188-7f1f81bd137d'},
+    {'name': 'survey_demographics.json', 'path': 'survey_demographics.json'},
     {'name': 'chuva.mp3', 'path': 'chuva.mp3'},
     {'name': 'chuva.mp3', 'path': 'chuva.mp3'},
     {'name': 'stimuli_A.csv', 'path': 'stimuli_A.csv'},
@@ -1158,7 +1158,7 @@ function demographic_infoRoutineBegin(snapshot) {
     demographic_info = new visual.Survey({
         win: psychoJS.window,
         name: 'demographic_info',
-        surveyId: '#25e8f1da-740f-438d-9188-7f1f81bd137d',
+        model: 'survey_demographics.json',
     });
     demographic_infoClock = new util.Clock();
     demographic_info.setAutoDraw(true);
@@ -1209,7 +1209,6 @@ function demographic_infoRoutineEnd(snapshot) {
     }
     // recursively add survey responses
     addRecursively(demographic_infoResponse, 'demographic_info');
-    await demographic_info.save();
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
       psychoJS.experiment.nextEntry(snapshot);
