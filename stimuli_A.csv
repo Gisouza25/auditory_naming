@@ -1,0 +1,76 @@
+condition,stimuli,target,zipf_target,target_category,n_letter_target,origin,stim_word_count,audio_file
+A,Animal de fazenda que produz lã,Ovelha,3.0691,Animais,6,Adeen,7,ovelha.mp3
+A,Estrutura com degraus para subir e descer,Escada,3.6651,Móveis,6,Adeen,8,escada.mp3
+A,Lugar com areia no litoral,Praia,4.8728,Natureza,5,Hamberger & Seidel (2003),6,praia.mp3
+A,Objeto que faz vento usado para refrescar no calor,Ventilador,3.2762,Ferramentas e aparelhos,10,Nosso,11,ventilador.mp3
+A,Réptil que tem o casco nas costas,Tartaruga,3.495,Animais,9,Nosso,8,tartaruga.mp3
+A,Lista de comidas servidas no restaurante,Cardápio,4.2931,Objetos diversos,8,Hamberger & Seidel (2003),7,cardápio.mp3
+A,Objeto pequeno geralmente redondo que fecha a camisa,Botão,3.8707,Vestuário e acessórios,5,Adeen,9,botão.mp3
+A,Lugar onde se emprestam livros,Biblioteca,4.2594,Lugares e edificações,10,Hamberger & Seidel (2003),6,biblioteca.mp3
+A,Animal doméstico que ronrona,Gato,4.0417,Animais,4,Adeen,5,gato.mp3
+A,Cômodo da casa onde se prepara a comida,Cozinha,4.5765,Lugares e edificações,7,Hamberger & Seidel (2003),7,cozinha.mp3
+A,Peça de roupa que você veste nas mãos,Luvas,3.7983,Vestuário e acessórios,5,Adeen,9,luvas.mp3
+A,Órgão do corpo que bombeia sangue,Coração,4.8196,Partes do corpo,7,Adeen,7,coração.mp3
+A,Profissional que cuida de doentes em um hospital,Médico,4.9768,Pessoas e profissões,6,Nosso,8,médico.mp3
+A,Animal que muge e dá leite,Vaca,3.8857,Animais,4,Adeen,7,vaca.mp3
+A,Instrumento de percussão usado com baquetas,Bateria,4.3107,Instrumentos musicais,7,Adeen,7,bateria.mp3
+A,A parte da árvore que cresce embaixo da terra,Raiz,4.096,Natureza,4,Hamberger & Seidel (2003),9,raiz.mp3
+A,Instrumento para medir a temperatura,Termômetro,3.6975,Ferramentas e aparelhos,10,Hamberger & Seidel (2003),5,termômetro.mp3
+A,Pássaro colorido que imita pessoas falando,Papagaio,3.4266,Animais,8,Nosso,6,papagaio.mp3
+A,Instrumento de cordas que se apoia no queixo,Violino,3.5772,Instrumentos musicais,7,Adeen,9,violino.mp3
+A,O planeta em que vivemos,Terra,5.1673,Natureza,5,Hamberger & Seidel (2003),5,terra.mp3
+A,Coisa que destranca uma fechadura,Chave,4.3976,Ferramentas e aparelhos,5,Adeen,6,chave.mp3
+A,Transporte público rodoviário que para em pontos,Ônibus,5.1201,Veículos,6,Adeen,7,ônibus.mp3
+A,Animal que dorme de cabeça para baixo,Morcego,3.1849,Animais,7,Nosso,7,morcego.mp3
+A,A parte da perna que dobra,Joelho,4.2617,Partes do corpo,6,Hamberger & Seidel (2003),6,joelho.mp3
+A,Desenho permanente na pele,Tatuagem,3.3701,Objetos diversos,8,Hamberger & Seidel (2003),5,tatuagem.mp3
+A,Objeto que se abre para proteger da chuva,Guarda-chuva,3.382,Ferramentas e aparelhos,11,Adeen,9,guarda-chuva.mp3
+A,Animal de quatro patas que faz au-au,Cachorro,4.116,Animais,8,Teste idosos,7,cachorro.mp3
+A,Buraco fundo no chão de onde se tira água,Poço,3.8224,Lugares e edificações,4,Adeen,10,poço.mp3
+A,Talher usado junto com a faca para comer,Garfo,3.2117,Utensílios domésticos,5,Adeen,9,garfo.mp3
+A,Móvel para dormir que tem travesseiro e colchão,Cama,4.3993,Móveis,4,Nosso,8,cama.mp3
+A,Usa chapéu preto e voa numa vassoura,Bruxa,3.504,Pessoas e profissões,5,Hamberger & Seidel (2003),7,bruxa.mp3
+A,Livro que contém as definições das palavras,Dicionário,4.0833,Objetos diversos,10,Hamberger & Seidel (2003),8,dicionário.mp3
+A,O que se come com manteiga no café da manhã,Pão,4.3121,Alimentos,3,Adeen,10,pão.mp3
+A,"Animal pesado, com tromba e orelhas grandes",Elefante,3.6062,Animais,8,Teste idosos,7,elefante.mp3
+A,Ferramenta para bater em pregos,Martelo,3.5542,Ferramentas e aparelhos,7,Adeen,6,martelo.mp3
+A,"Parte da mão levantada para sinalizar ""ok""",Dedão,2.8552,Partes do corpo,5,Adeen,10,dedão.mp3
+A,Frutas que crescem em um vinhedo,Uvas,3.504,Alimentos,4,Adeen,6,uvas.mp3
+A,Animal que faz quá-quá,Pato,3.7381,Animais,4,Adeen,5,pato.mp3
+A,Meio de transporte com asas,Avião,4.8077,Veículos,4,Adeen,5,avião.mp3
+A,Membros do corpo usados para caminhar,Perna,4.3363,Partes do corpo,5,Adeen,7,perna.mp3
+A,Objeto de metal que faz um som de badalada,Sino,3.364,Objetos diversos,4,Adeen,9,sino.mp3
+A,"Tem tronco de madeira, galhos e folhas",Árvore,4.3414,Natureza,6,Teste idosos,7,árvore.mp3
+A,Objeto de madeira usado para escrever no papel,Lápis,3.7632,Ferramentas e aparelhos,5,Adeen,9,lápis.mp3
+A,Armação com lentes que auxilia a enxergar,Óculos,4.183,Vestuário e acessórios,6,Adeen,7,óculos.mp3
+A,Roedor que come queijo,Rato,3.7892,Animais,4,Adeen,5,rato.mp3
+A,Parte do rosto usada para cheirar,Nariz,4.1755,Partes do corpo,5,Adeen,7,nariz.mp3
+A,Talher usado para cortar,Faca,4.0166,Utensílios domésticos,4,Adeen,5,faca.mp3
+A,O que um rei usa na cabeça,Coroa,4.0556,Vestuário e acessórios,5,Adeen,7,coroa.mp3
+A,Inseto voador que dá dengue,Mosquito,3.7087,Animais,8,Hamberger & Seidel (2003),6,mosquito.mp3
+A,O que hasteamos quando cantamos o hino nacional,Bandeira,4.3107,Objetos diversos,8,Adeen,8,bandeira.mp3
+A,Construção para pessoas morarem,Casa,5.6638,Lugares e edificações,4,Adeen,5,casa.mp3
+A,Doce com cobertura e uma vela de aniversário,Bolo,4.0833,Alimentos,4,Adeen,11,bolo.mp3
+A,Móvel da sala para várias pessoas se sentarem juntas,Sofá,3.725,Móveis,4,Adeen,11,sofá.mp3
+A,Veículo que viaja embaixo da água,Submarino,3.3579,Veículos,9,Hamberger & Seidel (2003),7,submarino.mp3
+A,Bastão de madeira usado para caminhar,Bengala,3.3052,Ferramentas e aparelhos,7,Hamberger & Seidel (2003),6,bengala.mp3
+A,Enfeite de festa que se infla com ar,Balão,3.7169,Brinquedos e objetos recreativos,5,Adeen,8,balão.mp3
+A,A parte da camisa que cobre os braços,Mangas,3.63,Vestuário e acessórios,6,Hamberger & Seidel (2003),8,mangas.mp3
+A,Objeto para ver as horas e minutos,Relógio,4.116,Ferramentas e aparelhos,7,Teste idosos,7,relógio.mp3
+A,Inseto que produz mel,Abelha,3.1755,Animais,6,Adeen,4,abelha.mp3
+A,Corpo celeste que ilumina as noites na Terra,Lua,4.4148,Natureza,3,Adeen,9,lua.mp3
+A,Profissional que dá aulas em uma escola,Professor,5.0837,Pessoas e profissões,9,Nosso,7,professor.mp3
+A,Objeto usado para varrer a casa,Vassoura,3.0568,Utensílios domésticos,8,Nosso,6,vassoura.mp3
+A,Vestimenta que se põe nos pés antes dos sapatos,Meias,3.9278,Vestuário e acessórios,5,Adeen,10,meias.mp3
+A,Instrumento usado para pesar,Balança,4.1256,Ferramentas e aparelhos,7,Hamberger & Seidel (2003),5,balança.mp3
+A,Pessoa que dirige o avião,Piloto,4.9705,Pessoas e profissões,6,Hamberger & Seidel (2003),6,piloto.mp3
+A,A parte amarela do ovo,Gema,3.1562,Alimentos,4,Hamberger & Seidel (2003),5,gema.mp3
+A,Objeto raso ou fundo para colocar a comida,Prato,4.2709,Utensílios domésticos,5,Nosso,8,prato.mp3
+A,Móvel onde você come suas refeições,Mesa,4.7997,Móveis,4,Adeen,7,mesa.mp3
+A,Estrutura de papel que as crianças empinam,Pipa,3.0691,Brinquedos e objetos recreativos,4,Adeen,8,pipa.mp3
+A,Objeto usado para barbear,Gilete,2.5128,Ferramentas e aparelhos,6,Hamberger & Seidel (2003),5,gilete.mp3
+A,Objeto redondo que você chuta,Bola,5.1398,Brinquedos e objetos recreativos,4,Adeen,5,bola.mp3
+A,Recipiente decorativo para flores,Vaso,3.6131,Utensílios domésticos,4,Adeen,5,vaso.mp3
+A,Estabelecimento que guarda e empresta dinheiro,Banco,5.2371,Lugares e edificações,5,Hamberger & Seidel (2003),7,banco.mp3
+A,Sobremesa gelada servida em casquinha ou copinho,Sorvete,3.8245,Alimentos,7,Nosso,7,sorvete.mp3
+A,Aparelho que tira fotos,Câmera,4.418,Ferramentas e aparelhos,6,Hamberger & Seidel (2003),5,câmera.mp3
