@@ -2180,6 +2180,7 @@ function aud_namLoopEndIteration(scheduler, snapshot) {
 
 var trialsMaxDurationReached;
 var _key_resp_2_allKeys;
+var first_keystroke_rt;
 var trialsMaxDuration;
 var trialsComponents;
 function trialsRoutineBegin(snapshot) {
@@ -2209,6 +2210,7 @@ function trialsRoutineBegin(snapshot) {
     // Run 'Begin Routine' code from key_logging
     key_history = [];
     previous_text = "";
+    first_keystroke_rt = "";
     
     psychoJS.experiment.addData('trials.started', globalClock.getTime());
     trialsMaxDuration = null
@@ -2393,6 +2395,9 @@ function trialsRoutineEachFrame() {
     } else {
         if ((current_text !== previous_text)) {
             if ((current_text.length > previous_text.length)) {
+                if (((first_keystroke_rt === "") && (previous_text === ""))) {
+                    first_keystroke_rt = t;
+                }
                 added_char = current_text.slice((- 1))[0];
                 if ((added_char === " ")) {
                     key_history.push("space");
@@ -2463,6 +2468,7 @@ function trialsRoutineEnd(snapshot) {
     key_resp_2.stop();
     // Run 'End Routine' code from key_logging
     psychoJS.experiment.addData("key_history", key_history.join("|"));
+    psychoJS.experiment.addData("first_keystroke_rt", first_keystroke_rt);
     
     // the Routine "trials" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
