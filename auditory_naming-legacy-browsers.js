@@ -39,6 +39,9 @@ psychoJS.scheduleCondition(function() { return (psychoJS.gui.dialogComponent.but
 // flowScheduler gets run if the participants presses OK
 flowScheduler.add(updateInfo); // add timeStamp
 flowScheduler.add(experimentInit);
+flowScheduler.add(start_clickRoutineBegin());
+flowScheduler.add(start_clickRoutineEachFrame());
+flowScheduler.add(start_clickRoutineEnd());
 flowScheduler.add(consent_1RoutineBegin());
 flowScheduler.add(consent_1RoutineEachFrame());
 flowScheduler.add(consent_1RoutineEnd());
@@ -206,6 +209,9 @@ async function updateInfo() {
 }
 
 
+var start_clickClock;
+var start_text;
+var mouse_start;
 var consent_1Clock;
 var consentimento;
 var concordo;
@@ -249,6 +255,24 @@ var agradecimento;
 var globalClock;
 var routineTimer;
 async function experimentInit() {
+  // Initialize components for Routine "start_click"
+  start_clickClock = new util.Clock();
+  start_text = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'start_text',
+    text: 'Clique com o mouse para começar',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0], draggable: false, height: 0.025,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color([-1, -1, -1]),  opacity: undefined,
+    depth: 0.0 
+  });
+  
+  mouse_start = new core.Mouse({
+    win: psychoJS.window,
+  });
+  mouse_start.mouseClock = new util.Clock();
   // Initialize components for Routine "consent_1"
   consent_1Clock = new util.Clock();
   consentimento = new visual.TextStim({
@@ -544,6 +568,138 @@ var t;
 var frameN;
 var continueRoutine;
 var routineForceEnded;
+var start_clickMaxDurationReached;
+var gotValidClick;
+var start_clickMaxDuration;
+var start_clickComponents;
+function start_clickRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'start_click' ---
+    t = 0;
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // keep track of whether this Routine was forcibly ended
+    routineForceEnded = false;
+    start_clickClock.reset();
+    routineTimer.reset();
+    start_clickMaxDurationReached = false;
+    // update component parameters for each repeat
+    // setup some python lists for storing info about the mouse_start
+    gotValidClick = false; // until a click is received
+    psychoJS.experiment.addData('start_click.started', globalClock.getTime());
+    start_clickMaxDuration = null
+    // keep track of which components have finished
+    start_clickComponents = [];
+    start_clickComponents.push(start_text);
+    start_clickComponents.push(mouse_start);
+    
+    start_clickComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+       });
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var prevButtonState;
+var _mouseButtons;
+function start_clickRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'start_click' ---
+    // get current time
+    t = start_clickClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    
+    // *start_text* updates
+    if (t >= 0.0 && start_text.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      start_text.tStart = t;  // (not accounting for frame time here)
+      start_text.frameNStart = frameN;  // exact frame index
+      
+      start_text.setAutoDraw(true);
+    }
+    
+    
+    // if start_text is active this frame...
+    if (start_text.status === PsychoJS.Status.STARTED) {
+    }
+    
+    // *mouse_start* updates
+    if (t >= 0.0 && mouse_start.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      mouse_start.tStart = t;  // (not accounting for frame time here)
+      mouse_start.frameNStart = frameN;  // exact frame index
+      
+      mouse_start.status = PsychoJS.Status.STARTED;
+      mouse_start.mouseClock.reset();
+      prevButtonState = mouse_start.getPressed();  // if button is down already this ISN'T a new click
+    }
+    
+    // if mouse_start is active this frame...
+    if (mouse_start.status === PsychoJS.Status.STARTED) {
+      _mouseButtons = mouse_start.getPressed();
+      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
+        prevButtonState = _mouseButtons;
+        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
+          // end routine on response
+          continueRoutine = false;
+        }
+      }
+    }
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      routineForceEnded = true;
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    start_clickComponents.forEach( function(thisComponent) {
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+      }
+    });
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function start_clickRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'start_click' ---
+    start_clickComponents.forEach( function(thisComponent) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    });
+    psychoJS.experiment.addData('start_click.stopped', globalClock.getTime());
+    // store data for psychoJS.experiment (ExperimentHandler)
+    // the Routine "start_click" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
 var consent_1MaxDurationReached;
 var _concordo_allKeys;
 var consent_1MaxDuration;
