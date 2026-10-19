@@ -2542,9 +2542,11 @@ function trialsRoutineEachFrame() {
         respostas.text = current_text;
     }
     if (_pj.in_es6("\n", current_text)) {
-        key_history.push("return");
         respostas.text = current_text.replace("\n", "");
-        continueRoutine = false;
+        if ((current_text.replace("\n", "").length > 0)) {
+            key_history.push("return");
+            continueRoutine = false;
+        }
     } else {
         if ((current_text !== previous_text)) {
             if ((current_text.length > previous_text.length)) {
